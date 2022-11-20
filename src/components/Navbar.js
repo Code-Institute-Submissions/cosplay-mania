@@ -3,13 +3,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
+import styles from '../styles/NavBar.module.css'
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand="md" fixed="top">
+    <Navbar className={styles.NavBar} expand="md" fixed="top">
       <Container>
-        <Navbar.Brand href="#home"><img src={logo} alt="logo" height="45" /></Navbar.Brand>
+        <Navbar.Brand href="#home"><img src={logo} alt="logo" height="50" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
