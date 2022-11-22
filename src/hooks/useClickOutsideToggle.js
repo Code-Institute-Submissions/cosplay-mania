@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const useClickOutsideToggle = () => {
   const [expanded, setExpanded] = useState(false);
@@ -7,7 +7,7 @@ const useClickOutsideToggle = () => {
     const handleClickOutside = (event) => {
       if (ref.current && !ref.current.contains(event.target)) {
         setExpanded(false);
-      }
+      };
     };
 
     document.addEventListener('mouseup', handleClickOutside)
