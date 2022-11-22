@@ -18,17 +18,16 @@ import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 
 function SignInForm() {
   const setCurrentUser = useSetCurrentUser();
-
   const [signInData, setSignInData] = useState({
     username: "",
     password: "",
   });
+  const [errors, setErrors] = useState({});
+  const history = useHistory();
+
   const { username, password } = signInData;
 
-  const [errors, setErrors] = useState({});
-
-  const history = useHistory();
-  const handleSubmit = async (event) => {
+  const handleSigninFormSubmit = async (event) => {
     event.preventDefault();
 
     try {
@@ -52,7 +51,7 @@ function SignInForm() {
       <Col className="my-auto p-0 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
           <h1 className={styles.Header}>sign in</h1>
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSigninFormSubmit}>
             <Form.Group className="mb-3" controlId="username">
               <Form.Label className="d-none">Username</Form.Label>
               <Form.Control

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 const useClickOutsideToggle = () => {
-    const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const ref = useRef(null)
   useEffect(() => {
     const handleClickOutside = (event) => {
