@@ -3,7 +3,7 @@ import { rest } from "msw"
 const baseURL = 'https://react-project-5.herokuapp.com/'
 
 export const handlers = [
-    rest.get(`${baseUrl}dj-rest-auth/user/`, (req, res, ctx) => {
+    rest.get(`${baseURL}dj-rest-auth/user/`, (req, res, ctx) => {
         return res(ctx.json({
             pk: 6,
             username: "SatoshiKon",
@@ -15,7 +15,7 @@ export const handlers = [
           })
         );
     }),
-    rest.post(`${baseUrl}dj-rest-auth/logout/`, (req, res, ctx) => {
+    rest.post(`${baseURL}dj-rest-auth/logout/`, (req, res, ctx) => {
         return res(ctx.status(200));
     }),
 ]
