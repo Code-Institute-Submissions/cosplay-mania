@@ -11,5 +11,4 @@ const Asset = ({ spinner, src, message }) => {
     </div>
   );
 };
-
 export default Asset;
