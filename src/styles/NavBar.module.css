@@ -8,22 +8,14 @@
   padding: 5px;
 }
 
-.NavLink i:hover {
-  color: #E5E4E2;
-}
-
 .NavLink:hover {
-  color: #E5E4E2;
+  color: #fff;
 }
 
 .Active i {
-  color: #dc143c;
+  color: #cc0000;
 }
 
 i {
-  color: #f9fafc;
-}
-
-i:hover {
-  
+  color: #d3d3d3;
 }

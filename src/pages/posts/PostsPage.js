@@ -53,7 +53,7 @@ function PostsPage({ message, filter = "" }) {
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <PopularProfiles mobile />
-        <i className={'fas fa-search ${styles.SearchIcon}'} />
+        <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form className={styles.SearchBar} onSubmit={(event) => event.preventDefault()}>
             <Form.Control 
                 value={query} 

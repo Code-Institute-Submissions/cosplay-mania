@@ -121,7 +121,7 @@ const SignUpForm = () => {
 
         <Container className={`mt-3 ${appStyles.Content}`}>
           <Link className={styles.Link} to="/signin">
-            Already have an account? <span>Sign in</span>
+            <span>Sign in</span>
           </Link>
         </Container>
       </Col>
@@ -131,7 +131,7 @@ const SignUpForm = () => {
       >
         <Image
           className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero2.jpg"}
+          src={"https://res.cloudinary.com/dbybmxt1u/image/upload/v1670192388/signup-heroine.jpg"}
         />
       </Col>
     </Row>

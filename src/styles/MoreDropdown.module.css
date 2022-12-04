@@ -4,8 +4,12 @@
     padding: 0px;
   }
   
-  .Absolute {
-    position: absolute;
-    right: 0;
-    z-index: 99;
-  }
+.Absolute {
+  position: absolute;
+  right: 40%;
+  z-index: 99;
+}
+
+.slight-margin {
+  margin-right: 40px;
+}

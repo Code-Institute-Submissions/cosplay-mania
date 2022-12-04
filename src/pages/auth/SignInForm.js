@@ -106,7 +106,7 @@ function SignInForm() {
         </Container>
         <Container className={`mt-3 ${appStyles.Content}`}>
           <Link className={styles.Link} to="/signup">
-            Don't have an account? <span>Sign up now!</span>
+            <span>Or sign up now!</span>
           </Link>
         </Container>
       </Col>
@@ -116,7 +116,7 @@ function SignInForm() {
       >
         <Image
           className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero.jpg"}
+          src={"https://res.cloudinary.com/dbybmxt1u/image/upload/v1670193131/signin-hero.jpg"}
         />
       </Col>
     </Row>
