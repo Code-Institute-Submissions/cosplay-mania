@@ -46,12 +46,17 @@ export const MoreDropdown = ({ handleEdit, handleDelete }) => {
 
 export const ProfileEditDropdown = ({ id }) => {
   const history = useHistory();
+
+  function onEditProfileClick() {
+    history.push(`/profiles/${id}/edit`);
+  }
+  
   return (
     <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left">
       <Dropdown.Toggle as={ThreeDots} />
       <Dropdown.Menu>
         <Dropdown.Item
-          onClick={() => history.push(`/profiles/${id}/edit`)}
+          onClick={onEditProfileClick}
           aria-label="edit-profile"
         >
           <i className="fas fa-edit" /> edit profile
