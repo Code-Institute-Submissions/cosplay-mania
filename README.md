@@ -14,7 +14,7 @@ Cosplay Mania is a photo-sharing platform for the wonderful world of cosplay! Us
 
 ## Objective
 
-Cosplay Mania is a photo-sharing platform that is targeted for a specific audience: those who love to cosplay! Whether you love dressing up as your favorite superhero, anime character, or a real-life figure, everybody is welcome to visit Cosplay Mania and post their greatest experiences cosplaying during specific events or for personal hobby. A user can sign up and then login to be able to create and share their post(s) with everyone else. They will also be able to give likes and comments to any other posts belonging to other users, though they may also comment on their post(s). These posts may be updated or deleted as desired. The user can follow another user to be able to see new posts specific to them on the user's feed. Any liked posts will also show up on a specific liked page for the user to repeated viewing. Last but not least, the user can update their profile picture and bio if they wish to do so.
+Cosplay Mania is a photo-sharing platform that is targeted for a specific audience: those who love to cosplay! Whether you love dressing up as your favorite superhero, anime character, or a real-life figure, everybody is welcome to visit Cosplay Mania and share their greatest experiences cosplaying during specific events or for personal hobby. A user can sign up and then login to be able to create and share their post(s) with everyone else. They will also be able to give likes and comments to any other posts belonging to other users, though they may also comment on their post(s). These posts may be updated or deleted as desired. The user can follow another user to be able to see new posts specific to them on the user's feed. Any liked posts will also show up on a specific liked page for the user to repeated viewing. Last but not least, the user can update their profile picture and bio if they wish to do so.
 
 ## User Experience
 
@@ -67,4 +67,49 @@ There are 30 issues, or in other words, User Stories that were planned and docum
 - As a user, I'd like to be able to edit my profile so that I can always update it.
 - As a user, I'd like to be able to update my username and password so that I can change my display name and keep my profile secure.
 
+## Design
+
+Due to both strict time constraints and my little understanding of the React module as a whole, I had little choice but to develop a website that practically follows the same design and concept as the Moments tutorial project.
+
+### Logo
+
+I created the Cosplay-Mania logo, seen at the top of this readme file, on [Canva](https://www.canva.com/).
+
+### Wireframes
+
+**Homepage, Feed, Likes Pages - Logged in**
+
+![Wireframes](src/assets/wireframes/1.jpg)
+
+**Homepage, Feed, Like Pages, Logged out**
+
+![Wireframes](src/assets/wireframes/2.jpg)
+
+**Profile Page**
+
+![Wireframes](src/assets/wireframes/3.jpg)
+
+**Signup Page**
+
+![Wireframes](src/assets/wireframes/4.jpg)
+
+**Signin Page**
+
+![Wireframes](src/assets/wireframes/5.jpg)
+
+### Color Scheme
+
+I picked the following colors as I felt that pink-reddish colors would fit the theme of the website.
+
+![Colors](src/assets/colors.png)
+
+### Font
+
+I use [Fredoka-One](https://fonts.google.com/specimen/Fredoka+One) as the font family for the website.
+
+### Images 
+
+Images seen on the posts come from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/) via the keyword "cosplay".
+
+## Features
 
