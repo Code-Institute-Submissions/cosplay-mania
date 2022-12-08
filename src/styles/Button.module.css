@@ -54,11 +54,11 @@
   
   .Black:hover,
   .BlackOutline {
-    background-color: aliceblue;
+    background-color: #ee4758;  /*ONE*/
     color: #f9fafc;
   }
   
   .Bright {
-    background-color: #ee4758;
+    background-color: #545454;
     color: #f9fafc;
   }

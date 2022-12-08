@@ -77,17 +77,18 @@ const Post = (props) => {
     <Card className={styles.Post}>
       <Card.Body>
         <Media className="d-flex me-2 align-items-center justify-content-between">
-          <Link to={`/profiles/${profile_id}`}>
+          <Link to={`/profiles/${profile_id}`} className="text-danger">
             <Avatar src={profile_image} height={55} />
             {owner}
           </Link>
           <div className="d-flex align-items-center">
             <span>{updated_at}</span>
-            {is_owner && postPage && "..."}
+            {is_owner && postPage && (
               <MoreDropdown
                 handleEdit={handleEdit}
                 handleDelete={handleDelete}
               />
+            )}
           </div>
         </Media>
       </Card.Body>
