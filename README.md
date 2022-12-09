@@ -77,11 +77,11 @@ I created the Cosplay-Mania logo, seen at the top of this readme file, on [Canva
 
 ### Wireframes
 
-**Homepage, Feed, Likes Pages - Logged in**
+**Homepage, Feed, Liked Pages - Logged in**
 
 ![Wireframes](src/assets/wireframes/1.jpg)
 
-**Homepage, Feed, Like Pages, Logged out**
+**Homepage, Feed, Liked Pages - Logged out**
 
 ![Wireframes](src/assets/wireframes/2.jpg)
 
@@ -113,3 +113,147 @@ Images seen on the posts come from [Pexels](https://www.pexels.com/) and [Unspla
 
 ## Features
 
+**Navigation Bar**
+
+Here the user can find the Cosplay-Mania logo which when clicked redirects them back to the homepage. On the right hand side, the user finds three navigation items: Home, Sign in, and Sign up. After logging in, the navigation bar changes state which will then display five navigation items: Home, Feed, Liked, Log out, and Profile.
+
+![Colors](src/assets/features/navbar.png)
+
+**Homepage**
+
+The landing page of Cosplay-Mania. This is where users can see all the posts shared by other users as well as themselves, and all of the available posts can be browsed by scrolling down the page as the infinite scroll feature will keep displaying the posts until the user reaches the very last post. Each post displays the number of likes and comments posted by other users. Liking a post will result in it being "stored" on the liked page.
+
+![Colors](src/assets/features/homepage.png)
+
+**Owned Post**
+
+Every post owned by a logged-in user has an ellipsis button on the top right, which when clicked will give the option to the user to edit or delete the post.
+
+![Colors](src/assets/features/owned-post.png)
+
+**Search Bar**
+
+The homepage, feed, and liked pages all feature a search bar. Users can use keywords to look for a specific post or posts of a specific user.
+
+![Colors](src/assets/features/search-bar.png)
+
+**Following**
+
+The right hand side displays popular users which can be followed or unfollowed by the logged-in user. Posts by followed users are then displayed on the feed page. 
+
+![Colors](src/assets/features/following.png)
+
+**Add Post**
+
+Logged-in users can click on the add post button next to the Cosplay-Mania logo to create and share a post. They only need to provide an image, a title for the post, and some text content.
+
+![Colors](src/assets/features/add-post.png)
+
+**Profile**
+
+This page is where a logged-in user is redirected to when clicking the avatar on the right side of the navbar. Here they can see how many posts they already share, the amount of users they follow, and the amount of users who follow them back. They can write a short bio if they wish to do so, under which all of their posts are displayed. The ellipsis button give the user the ability to edit their profile as well as update their username and password.
+
+![Colors](src/assets/features/profile.png)
+
+**404**
+
+![Colors](src/assets/colors.png)
+
+## Testing
+
+### HTML
+
+HTML code shows no particular errors that needed fixing.
+
+![HTML](src/assets/html.png)
+
+### CSS
+
+CSS code passed the validation test with flying colors.
+
+![CSS](src/assets/css.png)
+
+### JavaScript
+
+JS code has some necessary errors, particularly may have something to do with JSX syntax. But eveything seems to be fine as most of them are directly taken from the Moments walkthrough.
+
+![JavaScript](src/assets/javascript.png)
+
+### Lighthouse
+
+Lighthouse validation was run across all pages of the website in order to check performance, accessibility, best practices, and SEO, and the results are quite nice.
+
+![Lighthouse](src/assets/lighthouse.png)
+
+## Future Features
+
+In the future, once I understand React a little bit more, I would like to implement more models and features into the project, such as implementing events with map, private messaging feature for users, and more.
+
+## Bugs
+
+No bugs in particular was encountered other than some React Bootstrap syntax that needed adjustments.
+
+## Technologies
+
+### Languages
+
+- JSX
+- HTML
+- CSS
+- JavaScript
+- React Bootstrap
+
+### Programs
+
+- [Heroku](https://www.heroku.com/): Cloud platform used for the project deployment that lets companies build, deliver, monitor and scale apps.
+- [GitHub](https://github.com/): Code hosting platform for version control and collaboration.
+- [Gitpod](https://www.gitpod.io/): An IDE to create and develop this project.
+- [Cloudinary](https://cloudinary.com): End-to-end image and video hosting solution for websites and mobile apps.
+- [Figma](https://www.figma.com/): A collaborative web application for interface design.
+- [Google Fonts](https://fonts.google.com/): Font generator.
+- [Canva](https://www.canva.com/): Online graphic design tool.
+- [Unsplash](https://unsplash.com/): For cosplay images.
+- [Pexels](https://www.pexels.com/): For cosplay images.
+- [AmIResponsive](https://ui.dev/amiresponsive): To check for site responsiveness across various devices.
+
+## Deployment
+
+For this final milestone project, Heroku is used for the deployment of the application.
+
+1. After logging in, click the New button on the top right.
+2. From the dropdown, click Create new app.
+3. Type in a relevant name, choose your region, thne click Create app button.
+5. Go to Resources tab, and type in Postgres under add-ons to select Heroku Postgres.
+6. Go to Settings tab and click Config Vars button, then add and fill in all the necessary fields to connect the API and the frontend.
+7. Before deployment, make sure to set DEBUG to False.
+8. Now go to Deploy tab and choose GitHub as your Deployment method.
+9. Connect to GitHub by clicking the Search button and choosing the correct repository.
+10. You can now choose between Enable Automatic Deploys or manually deploy the application via Deploy Branch. After Heroku finishes building the application, you can click the View button to launch and run your terminal on a new tab.
+
+**GitHub**
+
+Forking the Repository:
+
+- Locate the repository.
+- Locate the 'Fork' button on the right side of the page. Clicking the button results in the creation of a copy of the repository.
+- The copy is now found in your GitHub account.
+
+Cloning the Repository:
+
+- Locate the repository.
+- Click the 'Code' button to the left of the green 'Gitpod' button.
+- Copy the link under HTTPS by clicking the clipboard icon.
+- Open Git Bash.
+- Change the current working directory to the location where you want the cloned directory to be made.
+- Type git clone and then paste the copied link form GitHub.
+- Pressing 'Enter' will result in the creation of the local clone.
+
+## Credits and Acknowledgements
+
+As I mentioned in the other Readme file for the backend, this final project is perhaps the most difficult learning experience I've ever had since I decided to learn how to code more than one year ago. It's safe to say that I did not manage to comprehend the inner workings of React and therefore found myself relying 100% on the Moments walkthrough for both the backend and frontend parts of this project. So I would like to say thank you to CodeInstitute for the guidance to get me through this difficult period. I am also grateful to the tutors who helped me during the difficulties I faced during the creation of this project. And of course, this would also not have been possible if not for the guidance, instructions, and recommendations I received from my mentor [Akshat Garg](https://www.linkedin.com/in/akshatnitd/).
+
+Thank you for the past one year!
+
+---
+
+Looking forward to my Diploma! (fingers crossed that I do not fail this project)
