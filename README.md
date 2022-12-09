@@ -117,47 +117,47 @@ Images seen on the posts come from [Pexels](https://www.pexels.com/) and [Unspla
 
 Here the user can find the Cosplay-Mania logo which when clicked redirects them back to the homepage. On the right hand side, the user finds three navigation items: Home, Sign in, and Sign up. After logging in, the navigation bar changes state which will then display five navigation items: Home, Feed, Liked, Log out, and Profile.
 
-![Colors](src/assets/features/navbar.png)
+![Navbar](src/assets/features/navbar.png)
 
 **Homepage**
 
 The landing page of Cosplay-Mania. This is where users can see all the posts shared by other users as well as themselves, and all of the available posts can be browsed by scrolling down the page as the infinite scroll feature will keep displaying the posts until the user reaches the very last post. Each post displays the number of likes and comments posted by other users. Liking a post will result in it being "stored" on the liked page.
 
-![Colors](src/assets/features/homepage.png)
+![Homepage](src/assets/features/homepage.png)
 
 **Owned Post**
 
 Every post owned by a logged-in user has an ellipsis button on the top right, which when clicked will give the option to the user to edit or delete the post.
 
-![Colors](src/assets/features/owned-post.png)
+![Owned-Posts](src/assets/features/owned-post.png)
 
 **Search Bar**
 
 The homepage, feed, and liked pages all feature a search bar. Users can use keywords to look for a specific post or posts of a specific user.
 
-![Colors](src/assets/features/search-bar.png)
+![Search-Bar](src/assets/features/search-bar.png)
 
 **Following**
 
 The right hand side displays popular users which can be followed or unfollowed by the logged-in user. Posts by followed users are then displayed on the feed page. 
 
-![Colors](src/assets/features/following.png)
+![Following](src/assets/features/following.png)
 
 **Add Post**
 
 Logged-in users can click on the add post button next to the Cosplay-Mania logo to create and share a post. They only need to provide an image, a title for the post, and some text content.
 
-![Colors](src/assets/features/add-post.png)
+![Add-Posts](src/assets/features/add-post.png)
 
 **Profile**
 
 This page is where a logged-in user is redirected to when clicking the avatar on the right side of the navbar. Here they can see how many posts they already share, the amount of users they follow, and the amount of users who follow them back. They can write a short bio if they wish to do so, under which all of their posts are displayed. The ellipsis button give the user the ability to edit their profile as well as update their username and password.
 
-![Colors](src/assets/features/profile.png)
+![Profiles](src/assets/features/profile.png)
 
 **404**
 
-![Colors](src/assets/colors.png)
+![404](src/assets/features/404.png)
 
 ## Testing
 
