@@ -159,7 +159,11 @@ This page is where a logged-in user is redirected to when clicking the avatar on
 
 ![404](src/assets/features/404.png)
 
-## Testing
+## Testing 
+
+### Manual Testing
+
+
 
 ### HTML
 
@@ -220,13 +224,23 @@ No bugs in particular was encountered other than some React Bootstrap syntax tha
 
 For this final milestone project, Heroku is used for the deployment of the application.
 
+**Gitpod**
+
+1. Set up the workspace on Gitpod with the command 'npx create-react-app . --use npm'.
+2. Use 'npm start' to test that the app compiles successfully.
+
+**Heroku**
+
 1. After logging in, click the New button on the top right.
 2. From the dropdown, click Create new app.
 3. Type in a relevant name, choose your region, thne click Create app button.
-5. Go to Resources tab, and type in Postgres under add-ons to select Heroku Postgres.
-6. Go to Settings tab and click Config Vars button, then add and fill in all the necessary fields to connect the API and the frontend.
-7. Before deployment, make sure to set DEBUG to False.
-8. Now go to Deploy tab and choose GitHub as your Deployment method.
+5. Go to Resources tab, and type in Postgres under add-ons to select Heroku Postgres (database moved to ElephantSQL).
+6. Go to Settings tab and click Config Vars button, then add and fill in all the necessary fields to connect the API and the frontend:
+    - Add 'CLIENT_ORIGIN' as key and 'https://cosplay-mania.herokuapp.com' as value for access to API databse.
+    - Add 'CLIENT_ORIGIN_DEV as key and 'https://3000-lapratomo24-cosplaymani-x8x6yi3rmgd.ws-eu80.gitpod.io' as value (updated when needed.)
+7. Add '"heroku-prebuild": "npm install -g serve",' in the scripts section of package.json file.
+8. Add Procfile filled with 'web: serve -s build'.
+8. Now go to Deploy tab on Heroku and choose GitHub as your Deployment method.
 9. Connect to GitHub by clicking the Search button and choosing the correct repository.
 10. You can now choose between Enable Automatic Deploys or manually deploy the application via Deploy Branch. After Heroku finishes building the application, you can click the View button to launch and run your terminal on a new tab.
 
