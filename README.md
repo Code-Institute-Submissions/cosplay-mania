@@ -163,7 +163,80 @@ This page is where a logged-in user is redirected to when clicking the avatar on
 
 ### Manual Testing
 
+- Application is confirmed responsive through [AmIResponsive](https://ui.dev/amiresponsive).
+- Toggler for navigation is displayed on mobile view.
 
+<details><summary><b>Toggler Button</b></summary>
+
+![Toggler](src/assets/tests/toggler.png)
+</details><br />
+
+- Signup:
+    - No username causes an error.
+    - Taken username causes an error.
+    - Missing password and confirmed password cause an error.
+    - Unmatched password and confirmed password cause an error.
+
+<details><summary><b>Signup Error</b></summary>
+
+![Signup](src/assets/tests/signup-error.png)
+</details><br />
+
+- Login:
+    - Missing or wrong username causes an error.
+    - Missing or wrong password causes an error.
+
+<details><summary><b>Login Error</b></summary>
+
+![Login](src/assets/tests/signin-error.png)
+</details><br />
+
+- Posts:
+    - Logged-in users can create posts through the add post button.
+    - Missing post title causes an error.
+    - Missing image causes an error.
+    - Excessive image size (px or mb) causes an error.
+    - Clicking the cancel button redirects users to homepage.
+
+<details><summary><b>Post Edit</b></summary>
+
+![Post](src/assets/tests/signin-error.png)
+</details><br />
+
+- Profiles:
+    - Logged-in users can access their profile through the avatar on the navbar.
+    - Logged-in users can edit their profile bio, avatar photo, username, and password.
+    - Clicking the cancel button on the profile page redirects users back to the profile page.
+    - Logged-in users can follow another profile(s) belonging to other users through the follow button.
+    - Posts from followed users are displayed on the feed page.
+
+<details><summary><b>Profile Edit</b></summary>
+
+![Profile](src/assets/tests/profileedit.png)
+</details><br />
+
+- Likes:
+    - Logged-in users can like or unlike posts belonging to other users.
+    - Logged-in users can not like their own posts.
+    - Liked posts display the number of likes they received from users.
+    - Liked posts are displayed on the liked page.
+
+<details><summary><b>Like Own Post</b></summary>
+
+![Like](src/assets/tests/likeownpost.png)
+</details><br />
+
+- Comments:
+    - Logged-in users can post a comment under their own posts or posts belonging to other users.
+    - Logged-in users can edit or delete their own comment(s).
+    - Empty comment field causes an error.
+    - Commented posts display the number of comments they received from users.
+    - Comments disappear automatically if the owner of a post deletes the post.
+
+<details><summary><b>Comment Edit</b></summary>
+
+![Comment](src/assets/tests/commentedit.png)
+</details><br />
 
 ### HTML
 
