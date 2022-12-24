@@ -293,6 +293,18 @@ No bugs in particular was encountered other than some React Bootstrap syntax tha
 - [Pexels](https://www.pexels.com/): For cosplay images.
 - [AmIResponsive](https://ui.dev/amiresponsive): To check for site responsiveness across various devices.
 
+## Reuse of Components
+
+A number of reusable components have been used throughout this project that is independent of one another and can be updated without disrupting user flow via page refresh in order to provide and maintain good user experience. For example:
+
+- axiosDefault.js -> to communicate with backend API.
+- Asset.js -> to display loading spinner.
+- Avatar.js -> to display user avatar.
+- MoreDropdown.js -> to display ellipsis button for edit and delete functionalities.
+- CurrentUserContext.js -> to confirm user logged-in status.
+- ProfileDataContext.js -> to provide follow and unfollow functionalities.
+- useRedirect.js -> to redirect unauthorized / logged-out users to e.g. homepage.
+
 ## Deployment
 
 For this final milestone project, Heroku is used for the deployment of the application.
